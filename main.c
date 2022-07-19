@@ -33,7 +33,7 @@ int main() {
     //Matrix_t sum;
     
     start_timer();
-    printMatrix(add(matrix_A, matrix_B));
+    printMatrix(multiply(matrix_A, matrix_B));
     stop_timer();
     int64_t cycle_time = get_timer();
     // printMatrix(sum);
