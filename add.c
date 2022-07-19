@@ -12,7 +12,7 @@
 
 /*--------------------------------------------------------------------*/
 
-void add(Matrix_t mat1, Matrix_t mat2, Matrix_t resultingMatrix) {
+void add(Matrix_t mat1, Matrix_t mat2, Matrix_t *resultingMatrix) {
     printf("0\n");
     int row = mat1.m;
     int column = mat1.n;

@@ -9,4 +9,4 @@
 
 /* The add function takes in two matrices as input and returns
 a matrix that is the sum of the two arguments */
-void add(Matrix_t mat1, Matrix_t mat2, Matrix_t resultingMatrix);
+void add(Matrix_t mat1, Matrix_t mat2, Matrix_t *resultingMatrix);

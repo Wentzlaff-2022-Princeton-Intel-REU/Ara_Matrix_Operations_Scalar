@@ -26,7 +26,7 @@ int main() {
 
     Matrix_t resultingMatrix;
     int32_t arr3[4];
-    readMatrices.elements = arr3;
+    resultingMatrix.elements = arr3;
 
     printf("Scalar Addition: \n");
 
@@ -36,7 +36,8 @@ int main() {
     //Matrix_t sum;
     
     //start_timer();
-    printMatrix(add(matrix_A, matrix_B, &resultingMatrix));
+    add(matrix_A, matrix_B, &resultingMatrix);
+    printMatrix(resultingMatrix)
   //  stop_timer();
    // int64_t cycle_time = get_timer();
     // printMatrix(sum);
