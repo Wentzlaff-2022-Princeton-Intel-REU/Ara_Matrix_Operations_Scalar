@@ -22,7 +22,8 @@ Matrix_t add(Matrix_t mat1, Matrix_t mat2) {
     Matrix_t resultingMatrix;
     resultingMatrix.m = row;
     resultingMatrix.n = column;
-    resultingMatrix.elements = {0, 0, 0, 0};
+    int32_t arr[4];
+    resultingMatrix.elements = arr;
     
     printf("2\n");
 
