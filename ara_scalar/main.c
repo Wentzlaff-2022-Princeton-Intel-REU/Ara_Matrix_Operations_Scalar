@@ -12,7 +12,7 @@
 
 /*--------------------------------------------------------------------*/
 
-int main(int argc, char *argv[]) {
+int main() {
     
     Matrix_t matrix_A, matrix_B;
     matrix_A.m = 2;
@@ -51,10 +51,10 @@ int main(int argc, char *argv[]) {
     start_timer();
     product = multiply(matrix_A, matrix_B);
     stop_timer();
-    int64_t cycle_time = get_timer();
+    int64_t cycle_timeb = get_timer();
     printMatrix(product);
 
-    printf("Runtime (cycles): %x\n", cycle_time);
+    printf("Runtime (cycles): %x\n", cycle_timeb);
     printMatrix(multiply(matrix_A, matrix_B));
 
     return 0;
