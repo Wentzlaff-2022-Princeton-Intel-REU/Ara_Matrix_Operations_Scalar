@@ -13,7 +13,7 @@
 /*--------------------------------------------------------------------*/
 
 Matrix_t add(Matrix_t mat1, Matrix_t mat2) {
-
+    printf("0\n");
     int row = mat1.m;
     int column = mat1.n;
     printf("1\n");
