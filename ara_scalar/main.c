@@ -8,6 +8,7 @@
 #include "add.h"
 #include "multiply.h"
 #include "print.h"
+#include "runtime.h"
 
 /*--------------------------------------------------------------------*/
 
@@ -24,17 +25,36 @@ int main(int argc, char *argv[]) {
     matrix_B.elements = arr2;
     // readMatrices(&matrix_A, &matrix_B);
 
-    
+    printf("Scalar Addition: ");
+
     printMatrix(matrix_A);
     printMatrix(matrix_B);
 
-    // sum = add(matrix_A, matrix_B);
+    Matrix_t sum;
+    
+    start_timer();
+    sum = add(matrix_A, matrix_B);
+    stop_timer();
+    int64_t cycle_time = get_timer();
+    printMatrix(sum);
 
-    printf("A + B = \n");
-    printMatrix(add(matrix_A, matrix_B));
+    printf("Runtime (cycles): %x\n", cycle_time);
     //printMatrix(sum);
 
-    printf("A * B = \n");
+    printf("Scalar Multiplication: ");
+
+    printMatrix(matrix_A);
+    printMatrix(matrix_B);
+
+    Matrix_t product;
+    
+    start_timer();
+    product = multiply(matrix_A, matrix_B);
+    stop_timer();
+    int64_t cycle_time = get_timer();
+    printMatrix(product);
+
+    printf("Runtime (cycles): %x\n", cycle_time);
     printMatrix(multiply(matrix_A, matrix_B));
 
     return 0;
