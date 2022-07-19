@@ -29,6 +29,7 @@ int main() {
     printMatrix(matrix_A);
     printf("\n");
     printMatrix(matrix_B);
+    printf("\n");
 
     Matrix_t sum;
     int32_t arr3[4];
@@ -39,9 +40,9 @@ int main() {
     stop_timer();
     int64_t cycle_time = get_timer();
     printMatrix(sum);
-    
 
-    printf("Runtime (cycles): %x\n", cycle_time);
+    printf("Runtime (cycles): %d\n", cycle_time);
+
 
 
     printf("Scalar Multiplication: \n");
@@ -49,6 +50,7 @@ int main() {
     printMatrix(matrix_A);
     printf("\n");
     printMatrix(matrix_B);
+    printf("\n");
 
     Matrix_t product;
     int32_t arr4[4];
@@ -60,7 +62,7 @@ int main() {
     int64_t cycle_timeb = get_timer();
     printMatrix(product);
 
-    printf("Runtime (cycles): %x\n", cycle_timeb);
+    printf("Runtime (cycles): %d\n", cycle_timeb);
 
     return 0;
 }
