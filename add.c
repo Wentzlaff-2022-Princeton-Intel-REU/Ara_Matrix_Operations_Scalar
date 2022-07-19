@@ -12,18 +12,18 @@
 
 /*--------------------------------------------------------------------*/
 
-Matrix_t add(Matrix_t mat1, Matrix_t mat2) {
+void add(Matrix_t mat1, Matrix_t mat2, Matrix_t resultingMatrix) {
     printf("0\n");
     int row = mat1.m;
     int column = mat1.n;
     printf("1\n");
 
 
-    Matrix_t resultingMatrix;
+    // Matrix_t resultingMatrix;
     resultingMatrix.m = row;
     resultingMatrix.n = column;
-    int32_t arr[4];
-    resultingMatrix.elements = arr;
+    // int32_t arr[4];
+    // resultingMatrix.elements = arr;
     
     printf("2\n");
 
@@ -38,7 +38,7 @@ Matrix_t add(Matrix_t mat1, Matrix_t mat2) {
     printf("5\n");
 
 
-    return resultingMatrix;
+    // return resultingMatrix;
 }
 
 

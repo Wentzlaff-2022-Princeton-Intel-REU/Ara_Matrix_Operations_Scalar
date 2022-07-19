@@ -19,12 +19,15 @@ int main() {
     matrix_A.n = 2;
     matrix_B.m = 2;
     matrix_B.n = 2;
-    int32_t arr[4];
-    arr = {1,1,1,1};
+    int32_t arr[4] = {1,1,1,1};
     int32_t arr2[4] = {1,1,1,1};
     matrix_A.elements = arr;
     matrix_B.elements = arr2;
     // readMatrices(&matrix_A, &matrix_B);
+
+    Matrix_t resultingMatrix;
+    int32_t arr3[4];
+    readMatrices.elements = arr3;
 
     printf("Scalar Addition: \n");
 
@@ -34,7 +37,7 @@ int main() {
     //Matrix_t sum;
     
     //start_timer();
-    printMatrix(add(matrix_A, matrix_B));
+    printMatrix(add(matrix_A, matrix_B, &resultingMatrix));
   //  stop_timer();
    // int64_t cycle_time = get_timer();
     // printMatrix(sum);
