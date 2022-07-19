@@ -55,7 +55,7 @@ int main() {
     product.elements = arr4;
     
     start_timer();
-    multiply(matrix_A, matrix_B);
+    multiply(matrix_A, matrix_B, &product);
     stop_timer();
     int64_t cycle_timeb = get_timer();
     printMatrix(product);
