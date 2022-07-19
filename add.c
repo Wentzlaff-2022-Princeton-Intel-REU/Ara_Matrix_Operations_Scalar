@@ -22,19 +22,19 @@ Matrix_t add(Matrix_t mat1, Matrix_t mat2) {
     Matrix_t resultingMatrix;
     resultingMatrix.m = row;
     resultingMatrix.n = column;
-    resultingMatrix.elements = new int [row * column];
+    resultingMatrix.elements = {0, 0, 0, 0};
     
     printf("2\n");
 
 
     for (int i = 0; i < row; i++){
         for (int j = 0; j < column; j++){
- 
-            resultingMatrix.elements[i*column + j] = mat1.elements[i*column + j] + mat2.elements[i*column + j];
             printf("3\n");
+            resultingMatrix.elements[i*column + j] = mat1.elements[i*column + j] + mat2.elements[i*column + j];
+            printf("4\n");
         }
     }
-    printf("4\n");
+    printf("5\n");
 
 
     return resultingMatrix;
