@@ -25,18 +25,18 @@ int main() {
     matrix_B.elements = arr2;
     // readMatrices(&matrix_A, &matrix_B);
 
-    printf("Scalar Addition: ");
+    printf("Scalar Addition: \n");
 
     printMatrix(matrix_A);
     printMatrix(matrix_B);
 
-    Matrix_t sum;
+    //Matrix_t sum;
     
     start_timer();
-    sum = add(matrix_A, matrix_B);
+    printMatrix(add(matrix_A, matrix_B));
     stop_timer();
     int64_t cycle_time = get_timer();
-    printMatrix(sum);
+    // printMatrix(sum);
 
     printf("Runtime (cycles): %x\n", cycle_time);
     //printMatrix(sum);
