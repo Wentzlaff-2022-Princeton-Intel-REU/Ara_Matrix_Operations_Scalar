@@ -27,5 +27,5 @@ void multiply(Matrix_t mat1, Matrix_t mat2, Matrix_t* resultingMatrix) {
             }
         }
     }
-    return resultingMatrix;
+
 }
