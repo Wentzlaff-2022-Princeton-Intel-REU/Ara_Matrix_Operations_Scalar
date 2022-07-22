@@ -6,7 +6,7 @@
 
 
 #include "multiply.h"
-#include "print.h"
+#include "printf.h"
 
 /*--------------------------------------------------------------------*/
 
@@ -38,15 +38,15 @@ void multiply(Matrix_t mat1, Matrix_t mat2, Matrix_t* resultingMatrix) {
                 for (int l = 0; l < q; l++){
                     vc[l] = vc[l] + (mat1.elements[i*n+k] * mat2.elements[j * q]);
 
-                    
+                    printf("%d ", vc[l]);
                     // resultingMatrix->elements[i*q+l] = resultingMatrix->elements[i*q+l] + (mat1.elements[i*n+k] * mat2.elements[j * q + l]);
               }
 
                // resultingMatrix->elements[i * q + j] += mat1.elements[i * q + k] * mat2.elements[k * q + j];
             }
-                printMatrix(resultingMatrix);
+            
                 resultingMatrix->elements[i*q] = vc;
-    printMatrix(resultingMatrix);
+    
             
         }
     }
