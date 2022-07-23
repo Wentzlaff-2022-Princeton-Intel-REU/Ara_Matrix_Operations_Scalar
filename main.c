@@ -2,7 +2,6 @@
 /* main.c                                                             */
 /*--------------------------------------------------------------------*/
 
-
 #include "matrix.h"
 #include "add.h"
 #include "multiply.h"
@@ -12,7 +11,6 @@
 /*--------------------------------------------------------------------*/
 
 int main() {
-    
     Matrix_t matrix_A, matrix_B;
     matrix_A.m = 2;
     matrix_A.n = 2;
@@ -22,7 +20,6 @@ int main() {
     int32_t arr2[4] = {1, 1, 1, 1};
     matrix_A.elements = arr;
     matrix_B.elements = arr2;
-
 
     printf("Scalar Addition: \n");
 
