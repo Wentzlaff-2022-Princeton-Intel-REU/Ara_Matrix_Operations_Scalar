@@ -3,7 +3,6 @@
 /*--------------------------------------------------------------------*/
 
 #include "add.h"
-#include "matrix.h"
 #include "multiply.h"
 #include "print.h"
 #include "runtime.h"
@@ -29,8 +28,8 @@ int main() {
     printf("\n");
 
     Matrix_t sum;
-    int32_t arr3[4];
-    sum.elements = arr3;
+    int32_t elementsSum[4];
+    sum.elements = elementsSum;
 
     start_timer();
     add(matrix_A, matrix_B, &sum);
@@ -49,8 +48,8 @@ int main() {
     printf("\n");
 
     Matrix_t product;
-    int32_t arr4[4];
-    product.elements = arr4;
+    int32_t elementsProd[4];
+    product.elements = elementsProd;
     
     start_timer();
     multiply(matrix_A, matrix_B, &product);
