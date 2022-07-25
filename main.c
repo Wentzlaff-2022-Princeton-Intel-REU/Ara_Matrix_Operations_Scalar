@@ -12,12 +12,12 @@
 
 int main() {
     Matrix_t matrix_A, matrix_B;
-    matrix_A.m = 7;
-    matrix_A.n = 7;
-    matrix_B.m = 7;
-    matrix_B.n = 7;
-    int32_t arr[49] = {59, 63, 63, 28, 76, 64, 32, 43, 36, 92, 59, 63, 63, 28, 76, 64, 32, 43, 36, 92, 59, 63, 63, 28, 76, 64, 32, 43, 36, 92, 59, 63, 63, 28, 76, 64, 32, 43, 36, 92, 59, 63, 63, 28, 76, 64, 32, 43, 36};
-    int32_t arr2[49] = {59, 63, 63, 28, 76, 64, 32, 43, 36, 92, 59, 63, 63, 28, 76, 64, 32, 43, 36, 92, 59, 63, 63, 28, 76, 64, 32, 43, 36, 92, 59, 63, 63, 28, 76, 64, 32, 43, 36, 92, 59, 63, 63, 28, 76, 64, 32, 43, 36};
+    matrix_A.m = 5;
+    matrix_A.n = 5;
+    matrix_B.m = 5;
+    matrix_B.n = 5;
+    int32_t arr[25] = {59, 63, 63, 28, 76, 64, 32, 43, 36, 63, 28, 76, 64, 32, 43, 36, 43, 36, 63, 28, 76, 64, 32, 43, 36};
+    int32_t arr2[25] = {59, 63, 63, 28, 76, 64, 32, 43, 36, 63, 28, 76, 64, 32, 43, 36, 43, 36, 63, 28, 76, 64, 32, 43, 36};
     matrix_A.elements = arr;
     matrix_B.elements = arr2;
 
@@ -29,7 +29,7 @@ int main() {
    // printf("\n");
 
     Matrix_t sum;
-    int32_t elementsSum[49];
+    int32_t elementsSum[25];
     sum.elements = elementsSum;
 
     start_timer();
@@ -49,7 +49,7 @@ int main() {
   //  printf("\n");
 
     Matrix_t product;
-    int32_t elementsProd[49];
+    int32_t elementsProd[25];
     product.elements = elementsProd;
     
     start_timer();
