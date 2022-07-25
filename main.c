@@ -12,12 +12,12 @@
 
 int main() {
     Matrix_t matrix_A, matrix_B;
-   matrix_A.m = 4;
-    matrix_A.n = 4;
-    matrix_B.m = 4;
-    matrix_B.n = 4;
-    int32_t arr[16] = {59, 63, 63, 28, 76, 64, 32, 43, 36, 63, 28, 76, 64, 32, 43, 36};
-    int32_t arr2[16] = {59, 63, 63, 28, 76, 64, 32, 43, 36, 63, 28, 76, 64, 32, 43, 36};
+    matrix_A.m = 3;
+    matrix_A.n = 3;
+    matrix_B.m = 3;
+    matrix_B.n = 3;
+    int32_t arr[9] = {59, 63, 63, 28, 76, 64, 32, 43, 36};
+    int32_t arr2[9] = {59, 63, 63, 28, 76, 64, 32, 43, 36};
 
     matrix_A.elements = arr;
     matrix_B.elements = arr2;
@@ -30,7 +30,7 @@ int main() {
    // printf("\n");
 
     Matrix_t sum;
-    int32_t elementsSum[16];
+    int32_t elementsSum[9];
     sum.elements = elementsSum;
 
     start_timer();
@@ -50,7 +50,7 @@ int main() {
   //  printf("\n");
 
     Matrix_t product;
-    int32_t elementsProd[16];
+    int32_t elementsProd[9];
     product.elements = elementsProd;
     
     start_timer();
