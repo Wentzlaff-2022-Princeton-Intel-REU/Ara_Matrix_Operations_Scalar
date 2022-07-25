@@ -5,6 +5,7 @@
 #include "add.h"
 #include "multiply.h"
 #include "print.h"
+#include "printf.h"
 #include "runtime.h"
 
 /*--------------------------------------------------------------------*/
