@@ -21,10 +21,12 @@ int main() {
     matrix_A.elements = elementsA;
     matrix_B.elements = elementsB;
 
-    printf("Scalar Addition: \n");
+    printf("Scalar Addition:\n\n");
 
+    printf("Matrix A:\n");
     printMatrix(matrix_A);
     printf("\n");
+    printf("Matrix B:\n");
     printMatrix(matrix_B);
     printf("\n");
 
@@ -36,15 +38,18 @@ int main() {
     add(matrix_A, matrix_B, &sum);
     stop_timer();
     int64_t cycle_time = get_timer();
+    printf("Sum:\n");
     printMatrix(sum);
 
     printf("Runtime (cycles): %d\n", cycle_time);
 
 
-    printf("Scalar Multiplication: \n");
+    printf("Scalar Multiplication:\n\n");
 
+    printf("Matrix A:\n");
     printMatrix(matrix_A);
     printf("\n");
+    printf("Matrix B:\n");
     printMatrix(matrix_B);
     printf("\n");
 
@@ -56,6 +61,7 @@ int main() {
     multiply(matrix_A, matrix_B, &product);
     stop_timer();
     int64_t cycle_timeb = get_timer();
+    printf("Product:\n");
     printMatrix(product);
 
     printf("Runtime (cycles): %d\n", cycle_timeb);
