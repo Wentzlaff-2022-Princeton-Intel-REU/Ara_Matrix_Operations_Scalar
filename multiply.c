@@ -15,7 +15,7 @@ void multiply(Matrix_t mat1, Matrix_t mat2, Matrix_t* resultingMatrix) {
     resultingMatrix->m = p;
     resultingMatrix->n = q;
 
-    // eventually holds the values of the products ith row
+    // eventually holds the values of the products in the ith row
     double prodRow[q];
 
     // iter through rows of mat1
